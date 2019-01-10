@@ -13,6 +13,7 @@ audio.deep_buffer.media=true \
 audio.offload.disable=true \
 audio.offload.min.duration.secs=30 \
 audio.offload.video=true \
+persist.audio.dirac.speaker=true \
 persist.vendor.audio.hw.binder.size_kbyte=1024 \
 persist.vendor.audio.fluence.speaker=false \
 persist.vendor.audio.fluence.voicecall=true \
