@@ -454,3 +454,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/firmware/rpm.mbn:install/firmware-update/rpm.mbn \
     $(LOCAL_PATH)/firmware/sbl1.mbn:install/firmware-update/sbl1.mbn \
     $(LOCAL_PATH)/firmware/tz.mbn:install/firmware-update/tz.mbn
+
+# Wallpapers
+PRODUCT_PACKAGES += \
+    PixelLiveWallpaperPrebuilt

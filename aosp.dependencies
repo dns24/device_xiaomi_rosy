@@ -6,6 +6,12 @@
       "target_path":"kernel/xiaomi/rosy"
    },
    {
+      "repository": "packages_apps_PixelLiveWallpaper",
+      "target_path": "packages/apps/PixelLiveWallpaper",
+      "branch": "ten",
+      "remote": "pixel-gitlab"
+   },
+   {
       "remote":"github",
       "branch":"ten",
       "repository":"Pulkit077/vendor_xiaomi_rosy",
