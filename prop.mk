@@ -75,7 +75,7 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.line
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.cne.feature=1 \
-persist.dpm.feature=1
+persist.vendor.dpm.feature=0
 
 # Coresight
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -97,7 +97,6 @@ debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
 debug.sf.disable_hwc_vds=1 \
-persist.vendor.dpm.feature=1 \
 ro.hardware.egl=adreno \
 debug.sf.hw=1 \
 debug.sf.recomputecrop=0 \
