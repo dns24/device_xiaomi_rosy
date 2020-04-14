@@ -1,0 +1,6 @@
+#============= priv_app ==============
+allow priv_app device:dir r_dir_perms;
+allow priv_app firmware_file:filesystem { getattr };
+allow priv_app proc_interrupts:file r_file_perms;
+allow priv_app proc_modules:file r_file_perms;
+allow priv_app sysfs_android_usb:file r_file_perms;

@@ -1,0 +1,8 @@
+#============= init_shell ==============
+set_prop(qti_init_shell, fm_prop);
+
+allow qti_init_shell proc_swap:file rw_file_perms;
+
+# Zram - allow configuring slub debug options
+allow qti_init_shell sysfs_slab_zshandle_storeuser:file rw_file_perms;
+allow qti_init_shell sysfs_slab_zspage_storeuser:file rw_file_perms;

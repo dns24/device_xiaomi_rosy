@@ -1,3 +1,11 @@
 #============= init ==============
-allow init sysfs:file setattr;
+allow init hidl_base_hwservice:hwservice_manager { add };
+allow init hwservicemanager:binder { call transfer };
+allow init proc:file { setattr };
 allow init proc_boot_reason:file r_file_perms;
+allow init sysfs:file { setattr };
+allow init sysfs_batteryinfo:file { setattr };
+allow init sysfs_leds:lnk_file r_file_perms;
+allow init system_file:file { mounton };
+allow init system_server:binder { call transfer };
+allow init vendor_file:file { execute };

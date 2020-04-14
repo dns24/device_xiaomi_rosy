@@ -1,0 +1,2 @@
+#============= cameraserver ==============
+allow cameraserver persist_camera_prop:file { getattr open read };

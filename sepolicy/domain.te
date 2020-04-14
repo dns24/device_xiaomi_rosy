@@ -1,0 +1,10 @@
+#============= domain ==============
+get_prop(domain, persist_camera_prop);
+
+allow domain sysfs_kgsl:dir { search };
+allow domain sysfs_kgsl:lnk_file r_file_perms;
+
+dontaudit domain sysfs:dir rw_dir_perms;
+dontaudit domain sysfs:file rw_file_perms;
+dontaudit domain vendor_file:file rw_file_perms;
+dontaudit domain self:capability { dac_override dac_read_search };

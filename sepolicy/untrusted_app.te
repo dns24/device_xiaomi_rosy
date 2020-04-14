@@ -1,0 +1,8 @@
+get_prop(untrusted_app_all, camera_prop);
+get_prop(untrusted_app_all, persist_camera_prop);
+get_prop(untrusted_app_all, vendor_camera_prop);
+
+get_prop(untrusted_app_all, theme_prop);
+
+allow untrusted_app_all app_data_file:file { getattr execute };
+allow untrusted_app_all ashmem_device:file r_file_perms;

@@ -1,0 +1,2 @@
+#============= platform_app ==============
+get_prop(platform_app, vendor_camera_prop);
