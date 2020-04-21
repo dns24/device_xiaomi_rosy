@@ -1292,18 +1292,18 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|f8a0e23cf538bc6664627ba9ac9
 
 # Graphics (SDM) - from LA.UM.8.6.r1-04400-89xx.0
 vendor/lib/libscalar.so|2843b818e48b298d51fe1c8c21a6fb8c67c8d18b
-vendor/lib/libsdm-color.so|f052cb28efd13d6332402a242f0ad6b9938f50dc
+vendor/lib/libsdm-color.so|fa3feba972c1076c3055367c969212df5e0e4a90
 vendor/lib/libsdm-diag.so|4e3449788c769a0eee0f4494ff1ead1072d6c639
 vendor/lib/libsdm-disp-apis.so|5b006423286008ba9b54b8c29e9ce2ab4b6fa14d
 -vendor/lib/libsdm-disp-vndapis.so|470b725055f9261a0a97d7f5293c1f3eeb71eb04
-vendor/lib/libsdmextension.so|db03cddf373709b70e96449efe0fd71c6b4ea397
+vendor/lib/libsdmextension.so|ed08025c0bd11445f0a0489cfdca7831a2b8b478
 vendor/lib/libtinyxml2_1.so|ef2167416f7a5a503256c5e818fcfa660d5146f4
 vendor/lib64/libscalar.so|7a4eba33218ad22abfc27d5213711972998bc0ea
-vendor/lib64/libsdm-color.so|e7ab3c8485e6bce768694f62d6d21f49f742da1f
+vendor/lib64/libsdm-color.so|335415c8f85a1e2e102667c24dffb166e7b08e75
 vendor/lib64/libsdm-diag.so|6db8c3e993f4f217e631ef9b83d063f9af0f2a26
 vendor/lib64/libsdm-disp-apis.so|25391818f65a4dfe3fdf0603109eacc4eedc4c13
 -vendor/lib64/libsdm-disp-vndapis.so|a09df3c5521567b292cb0e5f1f53df7d1fe2e1b7
-vendor/lib64/libsdmextension.so|0b6150765452307c81b5ada615b191527e67c6a8
+vendor/lib64/libsdmextension.so|6184043b163c502e3b89dbc216421f096a01d5b3
 vendor/lib64/libtinyxml2_1.so|56d4d5d0ea010f951de219c7b9fd2c9695a5b9d2
 
 # Graphics (vulkan) - from LA.UM.8.6.r1-04400-89xx.0
