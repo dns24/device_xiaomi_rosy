@@ -13,10 +13,12 @@ audio.deep_buffer.media=true \
 audio.offload.disable=true \
 audio.offload.min.duration.secs=30 \
 audio.offload.video=true \
+persist.vendor.audio.hw.binder.size_kbyte=1024 \
 persist.vendor.audio.fluence.speaker=false \
 persist.vendor.audio.fluence.voicecall=true \
 persist.vendor.audio.fluence.voicerec=false \
 persist.vendor.btstack.enable.splita2dp=false \
+ro.af.client_heap_size_kbyte=7168 \
 ro.config.media_vol_steps=25 \
 ro.config.vc_call_vol_steps=15 \
 ro.vendor.audio.sdk.fluencetype=fluence \
@@ -28,7 +30,7 @@ vendor.audio.offload.multiaac.enable=true \
 vendor.audio.offload.multiple.enabled=false \
 vendor.audio.offload.passthrough=false \
 vendor.audio.offload.track.enable=true \
-vendor.audio.parser.ip.buffer.size=262144 \
+vendor.audio.parser.ip.buffer.size=0 \
 vendor.audio.playback.mch.downsample=true \
 vendor.audio.pp.asphere.enabled=false \
 vendor.audio.read.wsatz.type=true \
@@ -80,11 +82,11 @@ persist.debug.coresight.config=stm-events
 
 # Dalvik
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-dalvik.vm.heapstartsize=16m \
+dalvik.vm.heapstartsize=8m \
 dalvik.vm.heapgrowthlimit=192m \
 dalvik.vm.heapsize=512m \
 dalvik.vm.heaptargetutilization=0.75 \
-dalvik.vm.heapminfree=2m \
+dalvik.vm.heapminfree=512k \
 dalvik.vm.heapmaxfree=8m
 
 # Display
@@ -93,12 +95,15 @@ debug.egl.hw=0 \
 debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
-debug.sf.enable_hwc_vds=1 \
+debug.sf.disable_hwc_vds=1 \
+persist.vendor.dpm.feature=1 \
+ro.hardware.egl=adreno \
 debug.sf.hw=0 \
 debug.sf.latch_unsignaled=0 \
 debug.sf.recomputecrop=0 \
 dev.pm.dyn_samplingrate=1 \
 persist.demo.hdmirotationlock=false \
+debug.sdm.support_writeback=0 \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
 ro.opengles.version=196610 \
@@ -108,11 +113,24 @@ sdm.debug.disable_skip_validate=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
-sys.display-size=1920x1080
+sys.display-size=1920x1080 \
+debug.enable.sglscale=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
 drm.service.enabled=true
+
+#LKMD
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.lmk.low=1001 \
+ro.lmk.medium=800 \
+ro.lmk.critical=0 \
+ro.lmk.critical_upgrade=false \
+ro.lmk.upgrade_pressure=100 \
+ro.lmk.downgrade_pressure=100 \
+ro.lmk.kill_heaviest_task=true \
+ro.lmk.kill_timeout_ms=100 \
+ro.lmk.use_minfree_levels=true
 
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -135,12 +153,8 @@ ro.gps.agps_provider=1
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
-debug.media.codec2=2 \
 media.aac_51_output_enabled=true \
 media.msm8956hw=0 \
-debug.stagefright.omx_default_rank.sw-audio=1 \
-debug.stagefright.omx_default_rank=0 \
-media.stagefright.thumbnail.prefer_hw_codecs=true \
 media.stagefright.audio.sink=280 \
 vendor.mm.enable.qcom_parser=1048575 \
 mm.enable.sec.smoothstreaming=true \
@@ -151,7 +165,8 @@ vendor.vidc.dec.downscalar_width=1920 \
 vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
 vendor.vidc.enc.disable_bframes=1 \
-vendor.video.disable.ubwc=1
+vendor.video.disable.ubwc=1 \
+media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -202,6 +217,23 @@ ro.surface_flinger.use_smart_90_for_video=true \
 ro.surface_flinger.set_display_power_timer_ms=10000 \
 ro.surface_flinger.set_touch_timer_ms=5000 \
 ro.surface_flinger.set_idle_timer_ms=9000
+
+PRODUCT_PROPERTY_OVERRIDES += \
+debug.sf.early_phase_offset_ns=1500000 \
+debug.sf.early_app_phase_offset_ns=1500000 \
+debug.sf.early_gl_phase_offset_ns=3000000 \
+debug.sf.early_gl_app_phase_offset_ns=15000000 \
+debug.sf.latch_unsignaled=1 \
+debug.sf.disable_backpressure=1 \
+debug.sf.enable_gl_backpressure=1
+
+# The default sf phase offset is set to 6ms, to avoid it be included into next
+# vsync threshold, set high fps early sf and next vsync threshold phase offset
+# to 6.1ms, which is bigger than all sf phase offsets in normal frame rate.
+PRODUCT_PROPERTY_OVERRIDES += \
+debug.sf.high_fps_early_phase_offset_ns=6100000 \
+debug.sf.high_fps_early_gl_phase_offset_ns=9000000 \
+debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
