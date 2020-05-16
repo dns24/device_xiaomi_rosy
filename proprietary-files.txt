@@ -1119,11 +1119,15 @@ vendor/lib64/vendor.qti.hardware.factory@1.1.so|882f4c7eee1b8247d503b185c0240d66
 # Fingerprint - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar|9899f8648755f72528128876c64f926887c853fc
 lib/android.hardware.biometrics.fingerprint@2.1.so|f060344dba35046ba4cc8e1946f6b7d9883ddf88
+lib/libunwind.so:vendor/lib/libunwind.so|1ae75f79380a80a7ea23096250e90fe8854b1bdd
 lib64/android.hardware.biometrics.fingerprint@2.1.so|dbb611d0f8d6f757efe99d67ff335b0a48a705c9
+lib64/libunwind.so:vendor/lib64/libunwind.so|dc4dde0652ea158c4584db68337801188ec5ec75
+lib/libsoftkeymaster.so:vendor/lib/libsoftkeymaster.so|eb30065dcb28a60c9ecdadfc03ef80c63eeb29fa
 lib64/hw/goodixfingerprint.default.so:vendor/lib64/hw/goodixfingerprint.default.so|7ada5ab08fd70a6f62e1dae87610a8f3ae19e4f9
 lib64/libgf_ca.so:vendor/lib64/libgf_ca.so|1e660ef345c1339455c86be2dfac3375e12c6957
 lib64/libgf_hal.so:vendor/lib64/libgf_hal.so|5fc203e4706c6f30bba5183552f2575ffce5d9f9
 lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so|ce75913a17a4bd70889cda947a07eeb75856c0c4
+lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster.so|97c5607ff9a484b4af967651ed0b1699b2aa98e5
 lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so:vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|48b46a7c66f8df3de45176a8eac570b12acf67f8
 lib64/libvendor.goodix.hardware.fingerprint@1.0.so:vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|371690003d4a74a79ed025a553a16a3d6aa59502
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|bf9c0b41849804f41955d484aa4f94215e03a16d
@@ -1132,10 +1136,9 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|49ebdf8c8
 vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
 vendor/framework/com.fingerprints.extension.jar|87aa4c45e885ad87870899c7d79fa597704afd83
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so|00ec59d13f71af807f8d46daa2197f539ca02669
+vendor/lib64/hw/fpcfingerprint.default.so|a78408bdf0833a70666bf0eb7449399dfc6952b4
 vendor/lib64/com.fingerprints.extension@1.0.so|265a7037215306e9b1e58ff87507d68d221e7feb
-vendor/lib64/hw/fpcfingerprint.default.so|a78408bdf0833a70666bf0eb7449399dfc6952b4
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|fc6d21a90fb860bd6f8e8df3bd19691d50d94ad7
-vendor/lib64/hw/fpcfingerprint.default.so|a78408bdf0833a70666bf0eb7449399dfc6952b4
 
 # Firmware - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 vendor/firmware/a225p5_pm4.fw|02e5fb26c121d388104bc6a0f31811dfa91f1828
