@@ -177,6 +177,9 @@ DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
 
+# Enable stats logging in LMKD
+TARGET_LMKD_STATS_LOG := true
+
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
