@@ -1621,20 +1621,20 @@ vendor/lib64/vendor.qti.imsrtpservice@2.0.so|6ef5cd72d34c20e82cb0e58681a4aae9b0d
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so|9eb713ce4ffd38006bd0ca794a7e4152b33b3ded
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so|6dbe703a5a8389c342008c950aaec7a3a260a055
 
-# Sensors - from daisy:10/QKQ1.191002.002/V11.0.4.0.QDLMIXM
-vendor/bin/sensors.qti|710b95b8fbec649b63204372988e0d4f4641fcf4
-vendor/lib/hw/activity_recognition.msm8953.so|1c7334f56182513bddefcb3b655064cca1121e21
-vendor/lib/libsensor1.so|a3bff5966ef0dd0623d385da9a8809f6dabb11f3
-vendor/lib/libsensor_reg.so|8f113416861ab8c14613ebf3ea6eeb9997971624
-vendor/lib/libsensor_user_cal.so|e76bc983cce7711bbb62a0f6062078fe7fb954eb
-vendor/lib/sensors.ssc.so|302e5aee38e1296dfba32b681681492d5070f509
-vendor/lib/sensor_calibrate.so|63edd83044713c8b5545655daf4e0eb7cdbebe1d
-vendor/lib64/hw/activity_recognition.msm8953.so|51a67f37dc2f7c9654fa3efe6a193e8dd93846c2
-vendor/lib64/libsensor1.so|24a1ee61b8d8d9494c7ce637bfdc280b428da5c8
-vendor/lib64/libsensor_reg.so|54baa94535e7dd96804019810e90cfbec5519bf5
-vendor/lib64/libsensor_user_cal.so|aea178debd6562e4f9e352aede494429c68ffcec
-vendor/lib64/sensors.ssc.so|9affbc5130223a63c7c8ee33a1b7408d739e1466
-vendor/lib64/sensor_calibrate.so|4bb147013fc7bb41b1009b591a4d91abbc54fb30
+# Sensors - from LA.UM.8.6.r1-04400-89xx.0
+vendor/bin/sensors.qti|8da8c4a8777091b2e66338f6be4047cbe73f6bf8
+vendor/lib/hw/activity_recognition.msm8953.so|824eb490aee2203d33ea5d864e49b916474cd13e
+vendor/lib/libsensor1.so|beefcf50269962c1f45806a2fd3e127ac855d26c
+vendor/lib/libsensor_reg.so|db6e00ba09e2d7cb65c070a3aecf374f7ea4cea1
+vendor/lib/libsensor_user_cal.so|d4b038e4424af44d4c7ba3b55ff630e98b78527f
+vendor/lib/sensors.ssc.so|91aaf89def079fe0c06c80656548f5229802e0cd
+vendor/lib/sensor_calibrate.so|62eab03e3fdddcc6d5d6255094f7697860226721
+vendor/lib64/hw/activity_recognition.msm8953.so|19637d97c2cf50a6c7b34d7529f2636198404522
+vendor/lib64/libsensor1.so|4a63118bc426116643216c5f43f70ce0cd52d537
+vendor/lib64/libsensor_reg.so|b977629681598d927830ed99986e818c01c2d34a
+vendor/lib64/libsensor_user_cal.so|a9cd76f06c02e23cb7f1552aa7d51567259faa47
+vendor/lib64/sensors.ssc.so|3642d92d56cd7b21720ff9d11a008040c16e5c5d
+vendor/lib64/sensor_calibrate.so|a997abadcff88cfaa4b756a98408cecc5d013daf
 
 # TUI - from LA.UM.8.6.r1-04400-89xx.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|05c0a47f24e38b14fc7c1ccfa64c585692277ee5
@@ -1642,19 +1642,19 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|19932d88afdf0351d7bfb6dee19a171d85bc1fde
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|7343cf8a20fb8e72e17b014cda7b5ae85841354a
 
-# Thermal - from daisy:10/QKQ1.191002.002/V11.0.4.0.QDLMIXM
-vendor/bin/thermal-engine|4ab3c410fbcf9f8cae711ea4ba16cd2797712de6
--vendor/lib/libthermalclient.so|6077e27e15d9e3e43fa57d6d5405c49284f48949
--vendor/lib64/libthermalclient.so|12b26d4242b1a8913ddcb511f42a1debb83689af
+# Thermal - from LA.UM.8.6.r1-04400-89xx.0
+vendor/bin/thermal-engine|f035777bb32c1f7a4a8ff2687e82a4e975568e52
+-vendor/lib/libthermalclient.so|14593d3551af6ce493b8534d123739cc7d146993
+-vendor/lib64/libthermalclient.so|c36b6baf6e82a73e7afaf52589dada5248a69daf
 vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
-vendor/lib64/libthermalioctl.so|24b22582f3f77769c5fbca06fcc1d3b6533cdf40
+vendor/lib64/libthermalioctl.so|1d6587245c7e7148638f14254e2f61f6b5552857
 
-# Time - from daisy:10/QKQ1.191002.002/V11.0.4.0.QDLMIXM
--vendor/app/TimeService/TimeService.apk|4a37afd1395758d946580af184a738e3c657b1e2
-vendor/bin/time_daemon|ae62ec5029368a381847232c043932ab4f41bb8e
+# Time - from LA.UM.8.6.r1-04400-89xx.0
+-vendor/app/TimeService/TimeService.apk|c935b678fdaed033513f044f6492361c3370f9f0
+vendor/bin/time_daemon|ccac9c14dcb7f2be8622bc64eeb1820ba595d0fd
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
--vendor/lib/libtime_genoff.so|a574d287e7e73649685b702f4fe497eb7c6ba727
--vendor/lib64/libtime_genoff.so|3c84c33b565008682681e3dbdcac7c6312e060ce
+-vendor/lib/libtime_genoff.so|679b4ec1615353e550110fc6a91df41dae83c63b
+-vendor/lib64/libtime_genoff.so|b056a9bc0ab6642369eda0ce3b097b036da2b24e
 
 # WFD - from LA.UM.8.6.r1-03400-89xx.0
 bin/wfdservice|934817e5689fe6f8b54032902de58c203b8ec2e7
