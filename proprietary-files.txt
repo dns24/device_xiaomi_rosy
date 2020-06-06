@@ -1345,18 +1345,6 @@ vendor/lib/libOmxVideoDSMode.so|b25a4993d411313dba2356f568b2d417a0eba271
 vendor/lib/libOmxWmaDec.so|404ae6ea303634d96d3ee46bee2c6f898fa46c15
 vendor/lib/libvqzip.so|c2cf1d2938c7af82bf011c8d371dfa8ae6cb038e
 -vendor/lib64/libgpustats.so|0cc12485618ae67fb327e89d03b78c5018eab7c1
-vendor/lib64/libI420colorconvert.so|296987a0fc833ead9db3640ef2de42d7126782fb
-vendor/lib64/libmm-color-convertor.so|d3539eb5a6a986f8ba81bac9cbf7b34872b12f1a
-vendor/lib64/libOmxAacDec.so|e38d13d000edda0a528d5ab32fb65bdadf36b9ca
-vendor/lib64/libOmxAlacDec.so|f1fd327383c90eb0b0a2ba0eef3b6c81816dd5ce
-vendor/lib64/libOmxAlacDecSw.so|971b09afca162ed63cd6447cdc4ab66e1b58391b
-vendor/lib64/libOmxAmrDec.so|55e1a436b900fd2c46d14c167625773cfd92bf9d
-vendor/lib64/libOmxAmrwbplusDec.so|b99226ddde0478417a475558800c7955e00070b7
-vendor/lib64/libOmxApeDec.so|9711031a7e85c7e3987a37bec434da19fe7f865a
-vendor/lib64/libOmxApeDecSw.so|03885e69606e7e868fe9d1245dac5651c301a567
-vendor/lib64/libOmxEvrcDec.so|dfbf3ad5e84218c16cdd5f0ea5b60bc87906e9ee
-vendor/lib64/libOmxQcelp13Dec.so|01786938265bd0de9adef15f695102333fca60a5
-vendor/lib64/libOmxWmaDec.so|3ef7d97fabeb56a43c26f8d3f19b1cb3b1a47ef8
 
 # Perf - from LA.UM.8.6.r1-04400-89xx.0
 product/lib/vendor.qti.hardware.perf@1.0.so|b4969fa797d1957ad8f35d4f84615608f0e9cc2e
