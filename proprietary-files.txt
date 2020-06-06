@@ -1218,9 +1218,9 @@ vendor/lib64/libgnss.so|ff8992a7dcf93c96e377303d275a29584bb9d973
 vendor/lib64/libgnsspps.so|67fc82137c2156744c0670bc9408e854a665f5d1
 vendor/lib64/libgps.utils.so|9f2b2967b311520502c139ce16cba4b54b8e8af7
 
-# Gatekeeper - from daisy:10/QKQ1.191002.002/V11.0.4.0.QDLMIXM
-vendor/lib/hw/gatekeeper.msm8953.so|cd04140788659ae07a50081baeb3eb2e42f37028
-vendor/lib64/hw/gatekeeper.msm8953.so|1086e5dcda7aa2bed7ac015f7850095f6199a1c2
+# Gatekeeper - from LA.UM.8.6.r1-04400-89xx.0
+vendor/lib/hw/gatekeeper.msm8953.so|c17725b59dac2effb3423edc60085366dd629e62
+vendor/lib64/hw/gatekeeper.msm8953.so|b3a9d78faa65029b0a20f2ff6dfe986bc80b64c1
 
 # Graphics - from daisy:10/QKQ1.191002.002/V11.0.4.0.QDLMIXM
 lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so|5b006423286008ba9b54b8c29e9ce2ab4b6fa14d
@@ -1278,21 +1278,23 @@ vendor/lib64/libsdm-diag.so|87373a043267b9b3bb923931a910119a9deb425f
 -vendor/lib64/libsdm-disp-vndapis.so|b1dede9efa81e8d0374343612ad7ad0d967e8e29
 vendor/lib64/libtinyxml2_1.so|56d4d5d0ea010f951de219c7b9fd2c9695a5b9d2
 
-# Keystore - from daisy:10/QKQ1.191002.002/V11.0.4.0.QDLMIXM
-vendor/lib/hw/keystore.msm8953.so|c56d3768e04fc180d844dbca94be8c27770e37d5
-vendor/lib64/hw/keystore.msm8953.so|9660e1c13a3589114cf18db58e5b3c3c9e14059b
+# Keystore - from LA.UM.8.6.r1-04400-89xx.0
+vendor/lib/hw/keystore.msm8953.so|9d4ae263688bcf3f4555255ff2f243f9bdff2032
+vendor/lib64/hw/keystore.msm8953.so|265cd4d0246f5e2e80916dd1c96262be28306b31
 
-# Latency - from daisy_sprout:10/QKQ1.191002.002/V11.0.2.0.QDLMIXM
+# Latency - from LA.UM.8.6.r1-04400-89xx.0
 product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar|c6c5d5bbf50b068df0184aef8551b95daa5f4791
 product/framework/vendor.qti.latency-V2.0-java.jar|d345e24271b83faecdb1abe1361db812fae0646f
-vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|53794a8d4dfeb0fbd233a4b128749a06d515c3f7
-vendor/lib64/vendor.qti.latency@2.0.so|0144eec541989f450695ec8cbdd595df4009fe1a
+vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|ae979b52234d7e965631394f6e1887a910ce0d36
+vendor/lib64/vendor.qti.latency@2.0.so|20a3037a1aea98f5f490b14c8f5620d2d3a0cf57
 
-# Listen - from daisy:10/QKQ1.191002.002/V11.0.4.0.QDLMIXM
-vendor/lib/hw/sound_trigger.primary.msm8953.so|991e0be9c5743d5d3394eb2f4b82740c3c0616f7
+# Listen - from LA.UM.8.6.r1-04400-89xx.0
+vendor/lib/hw/sound_trigger.primary.msm8953.so|53425351a1e5845ae4aafaf2db8206a801aa25a0
 vendor/lib/libadpcmdec.so|be5fdf08a08b635816381e61b6bbf2874c62f613
-vendor/lib/libsmwrapper.so|efed6475b26cafc15fed591a9aaa68b38cf6a37b
-vendor/lib64/hw/sound_trigger.primary.msm8953.so|4ff47ab34dfd457a57a5bede70769fbbc63c240e
+vendor/lib/libsmwrapper.so|1ab31b5378265784145defa47d50435029cf5f57
+vendor/lib/vendor.qti.voiceprint@1.0.so|ad4df37a1240290f2c1d678d751a0401509b343f
+vendor/lib64/hw/sound_trigger.primary.msm8953.so|62a3b3814deefbb1a83759fea4b6b705af6b36af
+vendor/lib64/vendor.qti.voiceprint@1.0.so|5c3794e4541cc916c03f5a2ba26c6c2f43149d16
 
 # Media - from daisy:10/QKQ1.191002.002/V11.0.4.0.QDLMIXM
 lib/libFileMux.so|1c713da8d18f03deb33c3211761fc07dd57d6946
@@ -1356,11 +1358,11 @@ vendor/lib64/libqti-util.so|e790b62bb198442145fcba20c2dc61d182c45a47
 vendor/lib64/vendor.qti.hardware.perf@1.0.so|9b411738cf2ca8319bacf1f859cc3679f576215a
 vendor/lib64/vendor.qti.hardware.perf@2.0.so|3131f461ecb897f68d02df0bf1027ca0a7d07c1d
 
-# Peripheral - from LA.UM.8.6.r1-03400-89xx.0
-vendor/bin/pm-proxy|1f216a6f54e9b97c026f3f3bc4d7d441d58d90a7
-vendor/bin/pm-service|8a521f14576d0d2edf03b4500a54379d37e15d4e
-vendor/lib/libperipheral_client.so|b75a6adac094ddcd6ded9415cae83e18d1e7e5d0
-vendor/lib64/libperipheral_client.so|20c8ab21fe28e41f60b59af0ba72de9f6b1996d2
+# Peripheral - from LA.UM.8.6.r1-04400-89xx.0
+vendor/bin/pm-proxy|2ac2d0e897ccb4c9a96b6a4cd3d66c2ef66c5b61
+vendor/bin/pm-service|68a46996bcb9014ebc948990fd943c40206dd8f2
+vendor/lib/libperipheral_client.so|7c096cff421a96be6490e1f004a57ee3b6b6e088
+vendor/lib64/libperipheral_client.so|fe796ff65665d341ddaa5847c26504b96a8c78ee
 
 # Postprocessing - from daisy:10/QKQ1.191002.002/V11.0.4.0.QDLMIXM
 etc/permissions/com.qti.snapdragon.sdk.display.xml|0bff16d681e75f203c1e11ff33afba82490e49b3
@@ -1634,11 +1636,11 @@ vendor/lib64/libsensor_user_cal.so|aea178debd6562e4f9e352aede494429c68ffcec
 vendor/lib64/sensors.ssc.so|9affbc5130223a63c7c8ee33a1b7408d739e1466
 vendor/lib64/sensor_calibrate.so|4bb147013fc7bb41b1009b591a4d91abbc54fb30
 
-# TUI - from daisy:10/QKQ1.191002.002/V11.0.4.0.QDLMIXM
+# TUI - from LA.UM.8.6.r1-04400-89xx.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|05c0a47f24e38b14fc7c1ccfa64c585692277ee5
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|313677dd28de6f6b2a5cf8b136d8ce0723bb5a65
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|b478f9ba87abd265ac15a154ab7412fed5839664
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|19932d88afdf0351d7bfb6dee19a171d85bc1fde
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|7343cf8a20fb8e72e17b014cda7b5ae85841354a
 
 # Thermal - from daisy:10/QKQ1.191002.002/V11.0.4.0.QDLMIXM
 vendor/bin/thermal-engine|4ab3c410fbcf9f8cae711ea4ba16cd2797712de6
@@ -1653,10 +1655,6 @@ vendor/bin/time_daemon|ae62ec5029368a381847232c043932ab4f41bb8e
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 -vendor/lib/libtime_genoff.so|a574d287e7e73649685b702f4fe497eb7c6ba727
 -vendor/lib64/libtime_genoff.so|3c84c33b565008682681e3dbdcac7c6312e060ce
-
-# Voice - from daisy:10/QKQ1.191002.002/V11.0.4.0.QDLMIXM
-vendor/lib/vendor.qti.voiceprint@1.0.so|b70091c7b738394468b7d732df283d23a3975f46
-vendor/lib64/vendor.qti.voiceprint@1.0.so|aeca80d0859dd1084b4a6585779d79b48ae9aa76
 
 # WFD - from LA.UM.8.6.r1-03400-89xx.0
 bin/wfdservice|934817e5689fe6f8b54032902de58c203b8ec2e7
