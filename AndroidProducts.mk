@@ -1,8 +1,8 @@
 #
-# Copyright (C) The LineageOS Project
+# Copyright (C) NusantaraProject
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_rosy.mk
+    $(LOCAL_DIR)/nad_rosy.mk
