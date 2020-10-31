@@ -6,9 +6,9 @@
       "target_path":"kernel/xiaomi/rosy"
    },
    {
-      "remote":"pixel-devices-blobs",
-      "branch":"ten",
-      "repository":"vendor_xiaomi_rosy",
+      "remote":"github",
+      "repository":"Pulkit077/vendor_xiaomi_rosy",
       "target_path":"vendor/xiaomi/rosy"
+      "branch":"eleven",
    }
 ]
