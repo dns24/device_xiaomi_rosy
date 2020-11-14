@@ -192,7 +192,6 @@ DEVICE_PROVISIONED=1 \
 persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
 persist.dbg.wfc_avail_ovr=1 \
-persist.sys.fflag.override.settings_network_and_internet_v2=true \
 persist.vendor.radio.apm_sim_not_pwdn=1 \
 persist.radio.aosp_usr_pref_sel=true \
 persist.radio.multisim.config=dsds \
@@ -206,8 +205,9 @@ rild.libargs=-d/dev/smd0 \
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 ro.telephony.call_ring.multiple=false \
 ro.telephony.default_network=22,22 \
+service.qti.ims.enabled=1 \
 ro.telephony.iwlan_operation_mode=legacy \
-service.qti.ims.enabled=1
+persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
