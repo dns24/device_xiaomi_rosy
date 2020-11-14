@@ -56,8 +56,47 @@ on property:sys.fp.vendor=goodix
 
 on post-fs-data
 
+    # Audio
+    chown system system /sys/kernel/sound_control/headphone_gain
+    chown system system /sys/kernel/sound_control/mic_gain
+    chmod 0660 /sys/kernel/sound_control/headphone_gain
+    chmod 0660 /sys/kernel/sound_control/mic_gain
+
+    # FPS Info
+    chown system graphics /sys/class/graphics/fb0/measured_fps
+    chmod 0666 /sys/class/graphics/fb0/measured_fps
+
     # IR nodes
     chown system system /dev/spidev7.1
     chown system system /dev/spidev6.1
     chmod 0666 /dev/spidev7.1
     chmod 0666 /dev/spidev6.1
+
+    # KCal
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_hue
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_sat
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_val
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_min
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_enable
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_hue
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_sat
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_val
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_min
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal
+
+    # Smart Charging
+    #Huaqin add for control charge by zhangjingzhi at 20180129 start
+    on boot 
+    chown system system /sys/class/power_supply/battery/charging_enabled 
+    chmod 0666 /sys/class/power_supply/battery/charging_enabled 
+    chown system system /sys/class/power_supply/battery/input_suspend 
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+    #Huaqin add for control charge by zhangjingzhi at 20180129 end
+    
+    # Vibration
+    chown system system /sys/devices/virtual/timed_output/vibrator/vtg_level
+    chmod 0660 /sys/devices/virtual/timed_output/vibrator/vtg_level
