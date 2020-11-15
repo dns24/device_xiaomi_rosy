@@ -1,15 +1,15 @@
 [
    {
       "remote":"github",
-      "branch":"ten",
-      "repository":"PixelExperience-Devices/kernel_xiaomi_rosy",
-      "target_path":"kernel/xiaomi/rosy"
+      "repository":"Pulkit077/kernel_xiaomi_rosy",
+      "target_path":"kernel/xiaomi/rosy",
+      "branch":"lineage-18.0"
    },
    {
       "remote":"github",
       "repository":"Pulkit077/vendor_xiaomi_rosy",
-      "target_path":"vendor/xiaomi/rosy"
-      "branch":"eleven",
+      "target_path":"vendor/xiaomi/rosy",
+      "branch":"lineage-18.0"
    },
    {
     "remote": "priv",
