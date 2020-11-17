@@ -35,3 +35,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Wallpapers
+PRODUCT_PACKAGES += \
+    NusantaraPapers
