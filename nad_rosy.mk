@@ -18,6 +18,7 @@ $(call inherit-product, device/xiaomi/rosy/device.mk)
 
 # Nusantara Properties
 NAD_BUILD_TYPE := OFFICIAL
+USE_PIXEL_CHARGING := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := nad_rosy
