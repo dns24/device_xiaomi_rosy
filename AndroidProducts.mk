@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_rosy.mk
+    $(LOCAL_DIR)/evolution_rosy.mk
