@@ -10,18 +10,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
 # Inherit some common Nusantara stuff
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-$(call inherit-product-if-exists, packages/apps/NusantaraParts/nadproject.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from rosy device
 $(call inherit-product, device/xiaomi/rosy/device.mk)
 
 # Nusantara Properties
-NAD_BUILD_TYPE := OFFICIAL
 USE_PIXEL_CHARGING := true
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := nad_rosy
+PRODUCT_NAME := lineage_rosy
 PRODUCT_DEVICE := rosy
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5
@@ -36,6 +34,5 @@ TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Wallpapers
-PRODUCT_PACKAGES += \
-    NusantaraPapers
+# Project Sakura official things
+SAKURA_MAINTAINER := ᴡʜᴀ-ʜᴇᴇᴅ
