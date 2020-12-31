@@ -95,7 +95,7 @@ sdm.debug.disable_skip_validate=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
-sys.display-size=1920x1080
+sys.display-size=3840x2160
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
