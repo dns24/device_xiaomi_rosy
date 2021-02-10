@@ -23,3 +23,6 @@ type debugfs_rmt, debugfs_type, fs_type;
 
 # Thermal engine
 type thermal_data_file, file_type, data_file_type;
+
+# /proc
+type proc_swap, fs_type, proc_type;
