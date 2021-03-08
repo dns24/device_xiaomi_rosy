@@ -62,3 +62,8 @@ on property:sys.fp.vendor=goodix
     setprop ro.boot.fpsensor goodix
     setprop persist.sys.fp.vendor goodix
 
+    # SmartCharging
+    chown system system /sys/class/power_supply/battery/charging_enabled
+    chmod 0666 /sys/class/power_supply/battery/charging_enabled
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
