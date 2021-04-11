@@ -66,3 +66,18 @@ on post-fs-data
     chown system system /dev/spidev6.1
     chmod 0666 /dev/spidev7.1
     chmod 0666 /dev/spidev6.1
+
+
+    # FPS Info
+    chown system graphics /sys/class/graphics/fb0/measured_fps
+    chmod 0666 /sys/class/graphics/fb0/measured_fps
+
+    # Smart Charging
+    #Huaqin add for control charge by zhangjingzhi at 20180129 start
+    on boot 
+    chown system system /sys/class/power_supply/battery/charging_enabled 
+    chmod 0666 /sys/class/power_supply/battery/charging_enabled 
+    chown system system /sys/class/power_supply/battery/input_suspend 
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+    #Huaqin add for control charge by zhangjingzhi at 20180129 end
+    
