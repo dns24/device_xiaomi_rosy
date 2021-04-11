@@ -10,6 +10,8 @@ audio.offload.disable=true \
 audio.offload.min.duration.secs=30 \
 audio.offload.video=true \
 persist.audio.dirac.speaker=true \
+persist.audio.hifi=true \
+persist.audio.hifi.volume=100 \
 hpx_send_params=1 \
 vendor.audio.use.dts_eagle=true \
 use.dts_eagle=true \
@@ -18,6 +20,8 @@ persist.vendor.audio.fluence.voicecall=true \
 persist.vendor.audio.fluence.voicerec=true \
 persist.vendor.btstack.enable.splita2dp=false \
 ro.af.client_heap_size_kbyte=7168 \
+ro.audio.hifi=true \
+ro.qc.sdk.audio.fluencetype=fluence \
 ro.vendor.audio.sdk.fluencetype=fluence \
 ro.vendor.audio.sdk.ssr=false \
 vendor.audio.flac.sw.decoder.24bit=true \
@@ -94,7 +98,7 @@ sdm.debug.disable_skip_validate=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
-sys.display-size=1920x1080
+sys.display-size=3840x2160
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
