@@ -1,0 +1,20 @@
+[
+  {
+      "remote":"github",
+      "repository":"Pulkit077/kernel_xiaomi_rosy",
+      "target_path":"kernel/xiaomi/rosy"
+      "branch":"eleven",
+   },
+   {
+    "remote": "priv",
+    "repository": "dns24/android_packages_apps_NusantaraParts",
+    "target_path": "packages/apps/NusantaraParts",
+    "branch": "3.18-rosy"
+  },
+  {
+    "remote": "priv",
+    "repository": "android_packages_apps_NusantaraPapers",
+    "target_path": "packages/apps/NusantaraPapers",
+    "branch": "10"
+  }
+]
