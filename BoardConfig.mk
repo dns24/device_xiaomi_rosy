@@ -47,7 +47,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/xiaomi/rosy
-TARGET_KERNEL_CONFIG := rosy_defconfig
+TARGET_KERNEL_CONFIG := rosy-perf_defconfig
 TARGET_KERNEL_VERSION := 3.18
 
 # ANT
@@ -215,7 +215,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 VENDOR_SECURITY_PATCH := 2019-02-01
 
 # SELinux
-#include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/minimal
 BOARD_SEPOLICY_VERS := 28.0
