@@ -36,6 +36,8 @@ PRODUCT_MANUFACTURER := Xiaomi
 NEZUKO_BUILD_TYPE := OFFICIAL
 NEZUKO_MAINTAINER := "attack_dns24"
 NEZUKO_DONATE := "https://paypal.me/attackdns24"
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.nezuko.cpu=msm8953
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 720
